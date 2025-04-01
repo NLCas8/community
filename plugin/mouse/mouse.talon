@@ -138,3 +138,9 @@ curse no:
 # To scroll with a hiss sound, set mouse_enable_hiss_scroll to true in settings.talon
 mouse hiss up: user.hiss_scroll_up()
 mouse hiss down: user.hiss_scroll_down()
+
+# Custom
+center mouse:
+    user.mouse_move_center_active_window()
+    mouse_click(0)
+    key(escape)

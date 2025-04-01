@@ -10,7 +10,7 @@ mod.list(
 mod.setting(
     "mouse_enable_pop_click",
     type=int,
-    default=0,
+    default=1,
     desc="Pop noise clicks left mouse button. 0 = off, 1 = on with eyetracker but not with zoom mouse mode, 2 = on but not with zoom mouse mode",
 )
 mod.setting(

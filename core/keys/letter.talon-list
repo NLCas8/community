@@ -5,13 +5,16 @@ list: user.letter
 air: a
 bat: b
 cap: c
+# cut: c
 drum: d
 each: e
 fine: f
 gust: g
 harp: h
-sit: i
-jury: j
+# sit:         i
+ice: i
+# jury:        j
+jail: j
 crunch: k
 look: l
 made: m

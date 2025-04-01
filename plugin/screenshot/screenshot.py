@@ -13,7 +13,7 @@ default_folder = ""
 if app.platform == "windows":
     default_folder = os.path.expanduser(os.path.join("~", r"OneDrive\\Pictures"))
 if not os.path.isdir(default_folder):
-    default_folder = os.path.join("~", "Pictures")
+    default_folder = os.path.join("~", "Pictures", "Screenshots")
 
 mod.setting(
     "screenshot_folder",

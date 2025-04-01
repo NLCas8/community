@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: nac39066.nedap
+-
+user: /Users/cas.wiefferink
+desktop: /Users/cas.wiefferink/Desktop
+desk: /Users/cas.wiefferink/Desktop
+documents: /Users/cas.wiefferink/Documents
+docks: /Users/cas.wiefferink/Documents
+downloads: /Users/cas.wiefferink/Downloads
+music: /Users/cas.wiefferink/Music
+pictures: /Users/cas.wiefferink/Pictures
+videos: /Users/cas.wiefferink/Videos
+talon home: /Users/cas.wiefferink/.talon
+talon recordings: /Users/cas.wiefferink/.talon/recordings
+talon user: /Users/cas.wiefferink/.talon/user
+home: /Users/cas.wiefferink

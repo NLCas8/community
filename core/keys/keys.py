@@ -139,6 +139,7 @@ punctuation_words = {
     "left paren": "(",
     "R paren": ")",
     "right paren": ")",
+    "close paren": ")",
 }
 symbol_key_words = {
     "dot": ".",
