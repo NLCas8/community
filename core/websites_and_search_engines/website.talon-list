@@ -5,19 +5,25 @@ talon slack: http://talonvoice.slack.com/messages/help
 talon wiki: https://talon.wiki/
 talon practice: https://chaosparrot.github.io/talon_practice/
 talon repository search: https://search.talonvoice.com/search/
-amazon: https://www.amazon.com/
-dropbox: https://dropbox.com/
 google: https://www.google.com/
-google calendar: https://calendar.google.com
-google maps: https://maps.google.com/
-google scholar: https://scholar.google.com/
-gmail: https://mail.google.com/
 github: https://github.com/
-gist: https://gist.github.com/
 wikipedia: https://en.wikipedia.org/
 youtube: https://www.youtube.com/
 
 # Nedap
 spark: https://spark.nedap.com/
 slite: https://nedap.slite.com/app/channels/poPaUNCXDt
+super: https://nedap.slite.com/super
 data platform: https://github.com/nedap/dataplatform
+
+# Dataplatform
+pull requests: https://github.com/nedap/dataplatform/pulls
+issues: https://github.com/nedap/dataplatform/issues
+actions: https://github.com/nedap/dataplatform/actions
+
+# Airflow
+airflow: http://localhost:18246/home
+Clear airflow: http://localhost:18246/dagrun/list/?_flt_4_state=success
+development: https://dataplatform-development.ons.io/home
+staging: https://dataplatform-staging.ons.io/home
+production: https://dataplatform.ons.io/home

@@ -45,7 +45,7 @@ reply: key(r)
 (comment preview | preview comment): key(ctrl-shift-p)
 git hub full screen: key(ctrl-shift-l)
 
-# browsing commit
+# browsing
 (form close | close form): key(escape)
 parent commit: key(p)
 other parent commit: key(o)
@@ -68,3 +68,23 @@ label set: key(l)
 go to workflow: insert("gf")
 timestamps toggle: key(shift-t)
 fullscreen toggle: key(shift-f)
+
+next [commit]: user.shortcat_double_click("next", "250ms")
+previous [commit]: user.shortcat_double_click("prev", "250ms")
+
+
+# check out progress from GitHub in browser
+check out (pull request|pr):
+    user.shortcat_click("copy", "1500ms")
+    sleep(1000ms)
+    mouse_click(0)
+    sleep(200ms)
+    user.switcher_focus("Code")
+    sleep(500ms)
+    user.vscode("git.checkout")
+    sleep(1000ms)
+    key(cmd-v)
+    sleep(1000ms)
+    key(enter)
+    sleep(3000ms)
+    user.vscode("workbench.view.extension.github-pull-request")

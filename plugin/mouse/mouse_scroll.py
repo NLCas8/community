@@ -8,7 +8,7 @@ scroll_job = None
 gaze_job = None
 scroll_dir: Literal[-1, 1] = 1
 scroll_start_ts: float = 0
-hiss_scroll_up = False
+hiss_scroll_up = True
 control_mouse_forced = False
 continuous_scrolling_speed_factor: float = 1.0
 is_continuous_scrolling_vertical: bool = True
@@ -36,7 +36,7 @@ mod.setting(
 mod.setting(
     "mouse_continuous_scroll_amount",
     type=int,
-    default=8,
+    default=10,
     desc="The default amount used when scrolling continuously",
 )
 mod.setting(
