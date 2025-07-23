@@ -8,6 +8,8 @@ ctx.matches = r"""
 tag: browser
 """
 
+browser_name = "Google Chrome"
+
 
 def is_url(url: str) -> bool:
     try:
@@ -160,3 +162,63 @@ class BrowserActions:
 
     def toggle_dev_tools():
         actions.key("ctrl-shift-i")
+
+
+@mod.action_class
+class Actions:
+    def browser_focus_default():
+        """Focus default browser"""
+        actions.user.switcher_focus(browser_name)
+        # actions.user.window_focus_name(browser_name)
+
+    def browser_copy_address():
+        """Browser copy address"""
+        actions.browser.focus_address()
+        actions.sleep("50ms")
+        actions.edit.copy()
+
+    def browser_open_new_tab(url: str):
+        """Open url in new tab"""
+        actions.key("cmd-t")
+        actions.sleep("50ms")
+        actions.insert(url)
+        actions.sleep("50ms")
+        actions.key("enter")
+
+    def browser_open(url: str):
+        """Focus browser and open url"""
+        if actions.app.name() != browser_name:
+            actions.user.browser_focus_default()
+            actions.sleep("50ms")
+        actions.user.browser_open_new_tab(url)
+
+    def browser_search(text: str):
+        """Focus browser and search for <text>"""
+        # Prefix with space to avoid matching search text with history
+        actions.user.browser_open(f"https://www.google.com/search?q={text}")
+
+    def browser_search_selected():
+        """Focus browser and search for selected text"""
+        text = actions.edit.selected_text().strip()
+        if text:
+            actions.user.browser_search(text)
+
+    def browser_translate(text: str):
+        """Focus browser and translate <text>"""
+        actions.user.browser_open(
+            f"https://translate.google.com/?sl=en&tl=nl&text={text}"
+        )
+
+    def browser_translate_selected():
+        """Focus browser and translate selected text"""
+        text = actions.edit.selected_text()
+        actions.user.browser_translate(text)
+
+    def browser_define(text: str):
+        """Focus browser and define phrase <text>"""
+        actions.user.browser_open(f"https://www.google.com/search?q=define+{text}")
+
+    def browser_define_selected():
+        """Focus browser and define selected text"""
+        text = actions.edit.selected_text()
+        actions.user.browser_define(text)
