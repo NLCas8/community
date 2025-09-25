@@ -5,7 +5,7 @@ settings():
     # Uncomment to set the speech timeout. This is the amount of time after you stop
     # speaking until Talon starts processing the spoken audio. Default is 0.3s.
     # was using 0.4
-    speech.timeout = 0.45
+    speech.timeout = 0.35
 
     # Uncomment to enable dark mode for talon help menus
     imgui.dark_mode = true
@@ -84,13 +84,13 @@ settings():
 
     # Uncomment to insert text longer than 10 characters (customizable) by pasting from
     # the clipboard. This is often faster than typing.
-    user.paste_to_insert_threshold = 10
+    user.paste_to_insert_threshold = 0
 
     # Uncomment to enable context-sensitive dictation. This determines how to format
     # (capitalize, space) dictation-mode speech by selecting & copying surrounding text
     # before inserting. This can be slow and may not work in some applications. You may
     # wish to enable this on a per-application basis.
-    # user.context_sensitive_dictation = true
+    user.context_sensitive_dictation = true
 
     # Choose how to resize windows moved across physical screens (eg. via `snap next`).
     # Default is 'proportional', which preserves window size : screen size ratio.

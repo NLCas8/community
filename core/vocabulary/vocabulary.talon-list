@@ -3,19 +3,8 @@ list: user.vocabulary
 N map: nmap
 under documented: under-documented
 nmap
-admin
-Cisco
-Citrix
-VPN
-DNS
-Minecraft
 
-pyenv
-git
-DAG
-Nedap
-Python
-
+### Names ###
 Cas
 Robin
 Diederik
@@ -23,5 +12,50 @@ Estefany
 Kasper
 Lena
 Marlous
+Steven
+Tristan
+Dolf
+Jeroen
 
+### Things ###
+admin
+ADR
+AI
+API
+CLI
+DAG
+DNS
+Datadog
 data platform: dataplatform
+Docker
+GDPR
+Git
+Github
+Kafka
+Kong
+Langfuse
+LiteLLM
+light llm: LiteLLM
+light lm: LiteLLM
+LLM
+Nedap
+Kong
+OpenTelemetry
+PII
+PoC
+PR
+pull request
+Portkey
+Python
+Slack
+Slite
+SQL
+VSCode
+VM
+VPN
+Zoom
+
+### Phrases ###
+Ahh
+btw
+by the way: btw

@@ -17,9 +17,9 @@ super: https://nedap.slite.com/super
 data platform: https://github.com/nedap/dataplatform
 
 # Dataplatform
-pull requests: https://github.com/nedap/dataplatform/pulls
-issues: https://github.com/nedap/dataplatform/issues
-actions: https://github.com/nedap/dataplatform/actions
+dataplatform pull requests: https://github.com/nedap/dataplatform/pulls
+dataplatform issues: https://github.com/nedap/dataplatform/issues
+dataplatform actions: https://github.com/nedap/dataplatform/actions
 
 # Airflow
 airflow: http://localhost:18246/home
@@ -27,3 +27,9 @@ Clear airflow: http://localhost:18246/dagrun/list/?_flt_4_state=success
 development: https://dataplatform-development.ons.io/home
 staging: https://dataplatform-staging.ons.io/home
 production: https://dataplatform.ons.io/home
+
+# AI Gateway
+gateway: https://github.com/nedap/ai-gateway
+pull requests: https://github.com/nedap/ai-gateway/pulls
+issues: https://github.com/nedap/ai-gateway/issues
+actions: https://github.com/nedap/ai-gateway/actions
